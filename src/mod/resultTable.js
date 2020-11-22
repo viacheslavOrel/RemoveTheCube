@@ -3,8 +3,6 @@ export default class ResultTable {
         this.resultNode = document.createElement('ul');
         this.resultNode.classList.add('list-group', 'border', 'h-100');
 
-        console.log(localStorage[ResultTable.localStorageKey]);
-
         if (localStorage[ResultTable.localStorageKey]) {
             this.results = JSON.parse(localStorage[ResultTable.localStorageKey]);
 
